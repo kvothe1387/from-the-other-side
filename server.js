@@ -6,7 +6,7 @@ const __dirname = import.meta.dirname
 
 const server = http.createServer(async (req, res) => {
 
-  await serveStatic(req, __dirname, res)
+  await serveStatic(req, res, __dirname)
 })
 
 server.listen(PORT, () => console.log(`Connected on port: ${PORT}`))
