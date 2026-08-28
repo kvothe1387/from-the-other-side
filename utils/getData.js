@@ -9,6 +9,7 @@ export async function getData() {
     return parsedData
 
   } catch (error) {
+    console.log(err)
     return []
   }
 }
